@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-Genius-Practise</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<!-- Header Section -->
+<header class="bg-blue-100 rounded-md flex justify-between px-5 py-2 m-10">
+        <div>
+            <h1 class="text-2xl font-bold">Interactive</h1>
+            <p class="font-bold text-slate-500">Geometry Genius</p>
+        </div>
+        <button class="bg-sky-600 font-bold text-slate-100 px-5 my-[15px] rounded-md">Blog</button>
+</header>
+
+<!-- Main Section -->
+<section class="m-10 flex justify-between">
+
+    <!-- main part -->
+    <main class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 w-[75%]">
+
+    <!-- Triangle -->
+    <div class="card card-compact  bg-base-100 shadow-xl py-5">
+        <figure><img src="images/triangle.png"/></figure>
+        <div class="card-body flex-col items-center">
+          <h2 class="card-title">Triangle</h2>
+          <p>Area (A) = 0.5 × b × h</p>
+          <div>
+            <input class="bg-slate-100 w-16 " type="text" placeholder="b">
+            <span>cm</span>
+            <input class="bg-slate-100 w-16" type="text" placeholder="h">
+            <span>cm</span>
+          </div>
+          <div class="card-actions justify-end">
+            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Rectangle -->
+    <div class="card card-compact  bg-base-100 shadow-xl py-5">
+        <figure><img class="w-[90%]" src="images/rectangle.png"/></figure>
+        <div class="card-body flex-col items-center">
+          <h2 class="card-title">Rectangle</h2>
+          <p>Area (A) = W × I</p>
+          <div>
+            <input class="bg-slate-100 w-16 " type="text" placeholder="W">
+            <span>cm</span>
+            <input id="rectangle-length" class="bg-slate-100 w-16" type="text" placeholder="I">
+            <span>cm</span>
+          </div>
+          <div class="card-actions justify-end">
+            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Parallelogram -->
+    <div class="card card-compact  bg-base-100 shadow-xl py-5">
+        <figure><img class="w-[90%]" src="images/parallelogram.png"/></figure>
+        <div class="card-body flex-col items-center">
+          <h2 class="card-title">Parallelogram</h2>
+          <p>Area (A) = b × h</p>
+          <div>
+            <input class="bg-slate-100 w-16 " type="text" placeholder="b">
+            <span>cm</span>
+            <input class="bg-slate-100 w-16" type="text" placeholder="h">
+            <span>cm</span>
+          </div>
+          <div class="card-actions justify-end">
+            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Rhombus -->
+    <div class="card card-compact  bg-base-100 shadow-xl py-5">
+        <figure><img src="images/rhombus.png"/></figure>
+        <div class="card-body flex-col items-center">
+          <h2 class="card-title">Rhombus</h2>
+          <p>Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub></p>
+          <div>
+            <input class="bg-slate-100 w-16 " type="text" placeholder=" d1">
+            <span>cm</span>
+            <input class="bg-slate-100 w-16" type="text" placeholder=" d2">
+            <span>cm</span>
+          </div>
+          <div class="card-actions justify-end">
+            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pentagon -->
+    <div class="card card-compact  bg-base-100 shadow-xl py-5">
+        <figure><img src="images/pentagon.png"/></figure>
+        <div class="card-body flex-col items-center">
+          <h2 class="card-title">Pentagon</h2>
+          <p>Area (A) = 0.5 × p × b</p>
+          <div>
+            <input class="bg-slate-100 w-16 " type="text" placeholder="p">
+            <span>cm</span>
+            <input class="bg-slate-100 w-16" type="text" placeholder="b">
+            <span>cm</span>
+          </div>
+          <div class="card-actions justify-end">
+            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    <!-- Ellipse -->
+    <div class="card card-compact  bg-base-100 shadow-xl py-5">
+        <figure><img class="w-[90%]" src="images/ellipse.png"/></figure>
+        <div class="card-body flex-col items-center">
+          <h2 class="card-title">Ellipse</h2>
+          <p>Area (A) = <span class="text-lg">π</span>ab</p>
+          <div>
+            <input class="bg-slate-100 w-16 " type="text" placeholder="a">
+            <span>cm</span>
+            <input class="bg-slate-100 w-16" type="text" placeholder="b">
+            <span>cm</span>
+          </div>
+          <div class="card-actions justify-end">
+            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- aside part -->
+    <aside class="w-[23%] border-2 border-b-slate-400 p-5 text-xs">
+        <h3 class="font-bold underline text-center" >Area Calculation</h3>
+        <div class="md:flex lg:flex items-center justify-between ">
+            <p>1. Triangle= 12cm2</p> 
+            <button class="bg-sky-600 font-bold text-slate-100 px-2 py-1 my-[15px] rounded-sm ">Convert to m<sup>2</sup></button>
+
+        </div>
+    </aside>
+
+</section>
+
+
+
+
+    
+
+
+<script src="scripts/rectangle.js"></script>
+</body>
+</html>
