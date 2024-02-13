@@ -49,13 +49,14 @@
           <h2 class="card-title">Rectangle</h2>
           <p>Area (A) = W × I</p>
           <div>
-            <input class="bg-slate-100 w-16 " type="text" placeholder="W">
+            <input id="rectangle-width" class="bg-slate-100 w-16 " type="text" placeholder="W">
             <span>cm</span>
             <input id="rectangle-length" class="bg-slate-100 w-16" type="text" placeholder="I">
             <span>cm</span>
           </div>
+          <div>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></div>
           <div class="card-actions justify-end">
-            <button class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
+            <button onclick="calculateRectangleArea()" class="bg-sky-600 font-bold text-slate-100 px-20 py-2 rounded-md">Calculate</button>
           </div>
         </div>
       </div>
